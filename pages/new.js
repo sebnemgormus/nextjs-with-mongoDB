@@ -64,6 +64,7 @@ const NewNote = () => {
         return err;
     }
 
+
     return (
         <div className="form-container">
             <div>
@@ -87,21 +88,20 @@ const NewNote = () => {
                                 error={errors.description ? { content: 'Please enter a description', pointing: 'below' } : null}
                                 onChange={handleChange}
                             />
-                            <Form.Button
-                                fluid
-                                label='Add Image'
-                                placeholder='image'
-                                name='image'
-                                error={errors.image ? { content: 'Please select a image', pointing: 'below' } : null}
-
-                            />
-
-                            <Button className="btn"  type='submit' >Create</Button>
-                        </Form>
+                            <div className="upload-cover">
+                                <div className="upload-top">
+                                   <img src="/upload.svg"/>
+                                   <h1>GÖRSEL</h1>
+                                </div>
+                                <Button type='submit'>Create</Button>
+                            </div>
+                    </Form>
                 }
             </div>
         </div>
     )
+
+
 }
 
 export default NewNote;

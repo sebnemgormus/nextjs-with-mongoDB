@@ -16,7 +16,6 @@ const Index = ({ notes }) => {
                                         <Link href={`/${note._id}`}>
                                             <a>{note.title}</a>
                                         </Link>
-
                                     </Card.Header>
                                     <Link href={`/${note._id}`}>
                                         <a>{note.description}</a>
@@ -25,7 +24,6 @@ const Index = ({ notes }) => {
                                         <a>{note.image}</a>
                                     </Link>
                                 </Card.Content>
-
                             </Card>
                         </div>
                     )
